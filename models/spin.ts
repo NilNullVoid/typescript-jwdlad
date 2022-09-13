@@ -10,5 +10,11 @@ export interface ISpin {
 export class SpinRecord implements ISpin {
   colour: Colours;
   bodyPart: BodyParts;
-  spins: Number;
+  num: number;
+
+  constructor(colour: Colours, bodyPart: BodyParts, num: number) {
+    this.colour = colour;
+    this.bodyPart = bodyPart;
+    this.num = num;
+  }
 }
